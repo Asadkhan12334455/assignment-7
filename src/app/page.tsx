@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 const Page = () => {
@@ -26,7 +27,7 @@ const Page = () => {
         <h2 className="text-xl font-semibold text-gray-800">{product.title}</h2>
         <p className="text-lg text-gray-600">${product.price}</p>
         <p className="text-sm text-gray-500 text-center">{product.description}</p>
-        <img
+        <Image
           src={product.image}
           alt={product.title}
           className="w-40 h-40 object-contain rounded-md shadow-md"
